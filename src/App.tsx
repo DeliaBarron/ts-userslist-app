@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import './App.css'
 import List from './components/List'
 import Form from './components/Form'
@@ -25,6 +25,7 @@ interface AppStates {
 
 function App() {
   const [subs, setSubs]= useState<AppStates['subs']>([])
+  const divRef = useRef<HTMLDivElement>(null)
 
   useEffect(()=>{
     setSubs(INITIAL_STATE)
@@ -35,7 +36,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" ref={divRef}>
      <h1>Title TS + React</h1>
      <List subs={subs}/>
      <Form onNewSub={handleNewSub}></Form>
