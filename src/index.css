@@ -1,0 +1,57 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+ul, h4 {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  border-radius: 200px;
+}
+ul li {
+  border-radius: 5px;
+  list-style: none;
+  border: solid crimson 1px;
+  margin-bottom: 1rem;
+  padding: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, textarea {
+  margin: 5px 0 5px 0;
+  border: solid 1px crimson;
+  padding: 2%;
+}
+
+input:focus {
+  outline-color: crimson;
+}
+
+button {
+  width: 50%;
+  margin-left:25%;
+  border: crimson solid 2px;
+  border-radius: 10px;
+  background-color: rgb(252, 191, 191);
+  cursor: pointer;
+  color: crimson;
+  font-weight: 550;
+}
